@@ -1,4 +1,5 @@
 import atomic from './atomic.jpg'
+import thehabit from './Thehabit.png'
 const catalog = [
     {
       id: 1,
@@ -13,10 +14,10 @@ const catalog = [
     },
     {
       id: 2,
-      title: "Book 2",
+      title: "The Habit",
       author: "Author 2",
       description: "Description of Book 2",
-      coverImage: atomic,
+      coverImage: thehabit,
       price: 14.99,
       ratings: 4.2,
       category: "Non-fiction",
