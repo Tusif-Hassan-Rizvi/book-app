@@ -1,0 +1,41 @@
+.image{
+    width: 200px;
+    padding: 10px;
+   border:  1px solid rgba(128, 128, 128, 0.251);
+  }
+
+  .main-data-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 1rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.286);
+    padding: 10px;
+  }
+  
+  .main-data-box:hover{
+    transition: all .5s ease;
+    transform: scale(1.05);
+  }
+  
+  .nodatafound{
+    text-align: center;
+  }
+  
+  .image-container{
+    width: 100vw;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loading-image{
+    width: 50px;
+  }
+  
+  
+  @media only screen and (max-width: 500px) {
+    .main-data-box{
+      margin: 2rem 0;
+    }
+  }
