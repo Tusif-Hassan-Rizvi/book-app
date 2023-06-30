@@ -56,7 +56,7 @@ export default function Catalog(props) {
 
   return (
     <>
-      <div>
+      <div className='filter-box'>
         <input
           type="text"
           placeholder="Search by title or author"

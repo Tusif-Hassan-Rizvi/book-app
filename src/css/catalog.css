@@ -4,6 +4,16 @@
    border:  1px solid rgba(128, 128, 128, 0.251);
   }
 
+  .filter-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .filter-box input, select{
+    margin: 10px;
+  }
+
   .main-data-box{
     display: flex;
     align-items: center;
