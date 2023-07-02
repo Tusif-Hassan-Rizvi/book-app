@@ -25,9 +25,10 @@ export default function Catalog(props) {
   };
 
   const filteredBooks = books.filter((book) => {
-    const matchesSearchQuery = book.title
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
+    const matchesSearchQuery =
+    book.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    book.author.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    book.category.toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesGenre =
       selectedGenre === "" || book.category === selectedGenre;
@@ -98,6 +99,7 @@ export default function Catalog(props) {
                     <p>{book.description}</p>
                     <p>Price: ${book.price}</p>
                     <p>Ratings: {book.ratings}</p>
+                    <p>Category: {book.category}</p>
                   </div>
                 )
               }
